@@ -27,7 +27,7 @@ public class OfferControllers {
 
     @GetMapping("/offers/{id}/details")
     public String showOffer(@PathVariable Long id, Model model){
-        model.addAttribute("offer", offerService.getOfferById(id));
+        model.addAttribute("offerDetail", offerService.getOfferById(id));
         return "details";
     }
 }

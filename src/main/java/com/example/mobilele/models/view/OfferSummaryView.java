@@ -4,17 +4,13 @@ import java.math.BigDecimal;
 
 public class OfferSummaryView {
     private Long id;
-    private String description;
     private String engine;
     private String imageUrl;
     private Long mileage;
     private BigDecimal price;
     private String transmission;
     private Integer year;
-    private String created;
-    private String modified;
     private String model;
-    private String seller;
     private String brand;
 
 
@@ -24,14 +20,6 @@ public class OfferSummaryView {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 
     public String getEngine() {
@@ -82,36 +70,12 @@ public class OfferSummaryView {
         this.year = year;
     }
 
-    public String getCreated() {
-        return created;
-    }
-
-    public void setCreated(String created) {
-        this.created = created;
-    }
-
-    public String getModified() {
-        return modified;
-    }
-
-    public void setModified(String modified) {
-        this.modified = modified;
-    }
-
     public String getModel() {
         return model;
     }
 
     public void setModel(String model) {
         this.model = model;
-    }
-
-    public String getSeller() {
-        return seller;
-    }
-
-    public void setSeller(String seller) {
-        this.seller = seller;
     }
 
     public String getBrand() {
