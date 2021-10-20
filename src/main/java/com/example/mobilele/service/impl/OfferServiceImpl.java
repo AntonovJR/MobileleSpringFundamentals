@@ -9,6 +9,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -31,7 +32,7 @@ public class OfferServiceImpl implements OfferService {
 
     @Override
     public OfferDetailView getOfferById(Long id) {
-        Offer byId = offerRepository.getById(id);
+        Offer byId = offerRepository.findById(id).orElse(null);
         return mapDetail(byId);
     }
 
